@@ -18,15 +18,15 @@ const Footer = () => {
             <div className="space-y-2">
               <p className="flex items-center text-gray-300 hover:text-gray-100 transition-colors">
                 <Mail className="h-5 w-5 mr-2 text-purple-500" />
-                contact@zoeencloud.com
+                mohammed@zoeencloud.com
               </p>
               <p className="flex items-center text-gray-300 hover:text-gray-100 transition-colors">
                 <Phone className="h-5 w-5 mr-2 text-purple-500" />
-                +1 (555) 123-4567
+                +(91) 7760594662
               </p>
               <p className="flex items-center text-gray-300 hover:text-gray-100 transition-colors">
                 <MapPin className="h-5 w-5 mr-2 text-purple-500" />
-                123 Tech Street, Cloud City
+                Godrej Aqua, Sammys DreamLand, Hosahalli, Banaglore - 562157
               </p>
             </div>
           </div>
