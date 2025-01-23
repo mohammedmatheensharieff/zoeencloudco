@@ -36,26 +36,30 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-blue-500 mb-4">Our Services</h1>
-          <p className="text-xl text-gray-400 mb-16">
+    <div className="bg-gradient-to-b from-black via-gray-900 to-black py-16 md:py-20 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 md:mb-12">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
+            Our Services
+          </h1>
+          <p className="text-lg md:text-xl text-gray-400">
             Comprehensive cloud solutions to transform your business
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="card-gradient p-6 md:p-8 rounded-lg border border-gray-800 hover:border-purple-500/50 transition-colors group"
             >
-              <service.icon className="h-12 w-12 text-blue-500 mb-6" />
-              <h3 className="text-xl font-semibold text-blue-400 mb-4">
+              <service.icon className="h-10 w-10 md:h-12 md:w-12 text-purple-500 mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-400">{service.description}</p>
+              <p className="text-sm md:text-base text-gray-400 mb-4">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
